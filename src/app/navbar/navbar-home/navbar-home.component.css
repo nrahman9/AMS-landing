@@ -1,0 +1,46 @@
+/* Nav Section */
+
+.navbar {
+  background-color: #273c75;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.fixed {
+  position: sticky;
+  width: 100%;
+  transition: 0.3s linear;
+  top: 0px;
+}
+.nofixed {
+  position: static;
+  transition: 0.2s linear;
+  top: -50px;
+}
+.text {
+  font-size: 1rem;
+}
+.mat-raised-button {
+  color: #fff;
+  background: #273c75;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    align-items: flex-start !important;
+    padding: 4px 24px !important;
+    flex-direction: unset !important;
+  }
+}
+
+#logo {
+  background: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+#logo img {
+  width: 85%;
+  min-height: auto;
+}

@@ -1,0 +1,27 @@
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.title-underline {
+  width: 40px;
+  height: 3px;
+  background-color: #0d2d62 !important;
+}
+
+/* counter section */
+
+.counter-icon {
+  color: #0d2d62;
+}
+.count-down {
+  color: #b80924;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.counter-text {
+  font-size: 1rem;
+}
+
+.review-img {
+  width: 150px;
+}

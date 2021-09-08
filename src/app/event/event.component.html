@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row my-5 text-center">
+    <div class="section-title mx-auto text-capitalize">
+      <h1><strong>Event</strong></h1>
+      <div class="title-underline mt-3 mx-auto"></div>
+    </div>
+  </div>
+
+  <div class="event-container">
+    <div class="row">
+      <div class="col-md-6 mx-auto" *ngFor="let item of items">
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">8</div>
+              <div class="month">Nov</div>
+            </div>
+          </div>
+
+          <div class="event-right">
+            <h3 class="event-title">{{ item.title }}</h3>
+
+            <div class="event-description">{{ item.description }}</div>
+
+            <div class="event-timing">
+              <p>{{ item.time }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

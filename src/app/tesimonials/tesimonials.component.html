@@ -1,0 +1,30 @@
+<!-- section title -->
+
+<!-- end of section title -->
+<div class="container">
+  <div class="row my-5 text-center">
+    <div class="section-title mx-auto text-capitalize">
+      <h1><strong>testimonial</strong></h1>
+      <div class="title-underline mt-3 mx-auto"></div>
+    </div>
+  </div>
+  <div class="testimonials">
+    <ngb-carousel [showNavigationIndicators]="showNavigationIndicators">
+      <ng-template ngbSlide *ngFor="let item of items">
+        <div class="col-md-12 col-center m-auto">
+          <div class="carousel">
+            <div class="item text-center">
+              <div class="img-box">
+                <img src="assets/testimonials-1.webp" alt="" />
+              </div>
+              <p class="testimonial">
+                {{ item.description }}
+              </p>
+              <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
