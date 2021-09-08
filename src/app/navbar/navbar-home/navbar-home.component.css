@@ -7,10 +7,12 @@
   justify-content: space-between;
 }
 .fixed {
-  position: sticky;
+  position: fixed;
+  z-index: 100;
   width: 100%;
   transition: 0.3s linear;
-  top: 0px;
+  top: 0;
+  left: 0;
 }
 .nofixed {
   position: static;
