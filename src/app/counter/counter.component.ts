@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CounterComponent implements OnInit {
   counterUp = 0;
   counter = 0;
+  counterStep = 0;
+  studentCount = 0;
   counterUpStop: any = setInterval(() => {
     this.counterUp++;
     if (this.counterUp == 97) {
@@ -20,6 +22,18 @@ export class CounterComponent implements OnInit {
       clearInterval(this.counterStop);
     }
   }, 50);
+  counterStepStop: any = setInterval(() => {
+    this.counterStep++;
+    if (this.counterStep == 2) {
+      clearInterval(this.counterStepStop);
+    }
+  }, 50);
+  studentCountStop: any = setInterval(() => {
+    this.studentCount++;
+    if (this.studentCount == 3000) {
+      clearInterval(this.studentCountStop);
+    }
+  }, 10);
   constructor() {}
 
   ngOnInit(): void {}
