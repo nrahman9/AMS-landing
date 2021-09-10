@@ -1,11 +1,13 @@
-<div (scroll)="onscroll()">
-  <mat-toolbar class="navbar" [ngClass]="navbarfixed ? 'fixed' : 'nofixed'">
-    <span class="text">info@adust.edu.bd</span>
-    <span class="button">
-      <a mat-raised-button>Sign in/Register</a>
-    </span>
-  </mat-toolbar>
-</div>
+<mat-toolbar
+  class="navbar"
+  (scroll)="onscroll()"
+  [ngClass]="navbarfixed ? 'fixed' : 'nofixed'"
+>
+  <span class="text"><a href="#" target="_blank">info@adust.edu.bd</a> </span>
+  <span class="button">
+    <a href="#" mat-raised-button>Sign in/Register</a>
+  </span>
+</mat-toolbar>
 
 <!-- navbar End-->
 <!-- logo section -->

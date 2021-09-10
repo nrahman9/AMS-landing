@@ -21,6 +21,7 @@
 }
 .text {
   font-size: 1rem;
+  color: #fff;
 }
 .mat-raised-button {
   color: #fff;
@@ -34,6 +35,9 @@ a {
     align-items: flex-start !important;
     padding: 4px 24px !important;
     flex-direction: unset !important;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 
