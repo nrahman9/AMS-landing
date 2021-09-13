@@ -16,7 +16,18 @@ import { CounterComponent } from './counter/counter.component';
 import { EventComponent } from './event/event.component';
 import { FooterComponent } from './footer/footer.component';
 @NgModule({
-  declarations: [AppComponent, TesimonialsComponent, TeamMemberComponent, HeaderComponent, AboutComponent, AboutMoreComponent, PosterComponent, CounterComponent, EventComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    TesimonialsComponent,
+    TeamMemberComponent,
+    HeaderComponent,
+    AboutComponent,
+    AboutMoreComponent,
+    PosterComponent,
+    CounterComponent,
+    EventComponent,
+    FooterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
