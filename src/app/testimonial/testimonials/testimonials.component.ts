@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tesimonials',
-  templateUrl: './tesimonials.component.html',
-  styleUrls: ['./tesimonials.component.css'],
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.css'],
 })
-export class TesimonialsComponent implements OnInit {
+export class TestimonialsComponent implements OnInit {
   showNavigationIndicators = false;
   items = [
     {
