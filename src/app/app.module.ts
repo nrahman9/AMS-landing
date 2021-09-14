@@ -7,21 +7,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TesimonialsComponent } from './tesimonials/tesimonials.component';
 import { TeamMemberComponent } from './team-member/team-member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AboutComponent } from './about/about.component';
-import { AboutMoreComponent } from './about-more/about-more.component';
+
 import { PosterComponent } from './poster/poster.component';
 import { CounterComponent } from './counter/counter.component';
 import { EventComponent } from './event/event.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HeaderModule } from './header/header.module';
+import { AboutModule } from './about/about.module';
 @NgModule({
   declarations: [
     AppComponent,
     TesimonialsComponent,
     TeamMemberComponent,
-    AboutComponent,
-    AboutMoreComponent,
+
     PosterComponent,
     CounterComponent,
     EventComponent,
@@ -34,6 +33,7 @@ import { HeaderModule } from './header/header.module';
     BrowserAnimationsModule,
     NavbarModule,
     HeaderModule,
+    AboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
