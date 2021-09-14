@@ -8,20 +8,19 @@ import { TesimonialsComponent } from './tesimonials/tesimonials.component';
 import { TeamMemberComponent } from './team-member/team-member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { PosterComponent } from './poster/poster.component';
 import { CounterComponent } from './counter/counter.component';
 import { EventComponent } from './event/event.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HeaderModule } from './header/header.module';
 import { AboutModule } from './about/about.module';
+import { PostersModule } from './posters/posters.module';
 @NgModule({
   declarations: [
     AppComponent,
     TesimonialsComponent,
     TeamMemberComponent,
 
-    PosterComponent,
     CounterComponent,
     EventComponent,
     FooterComponent,
@@ -34,6 +33,7 @@ import { AboutModule } from './about/about.module';
     NavbarModule,
     HeaderModule,
     AboutModule,
+    PostersModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
