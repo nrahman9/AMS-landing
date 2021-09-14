@@ -7,15 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamMemberComponent } from './team-member/team-member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { FooterComponent } from './footer/footer.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HeaderModule } from './header/header.module';
 import { AboutModule } from './about/about.module';
 import { PostersModule } from './posters/posters.module';
 import { CountersModule } from './counters/counters.module';
 import { TestimonialModule } from './testimonial/testimonial.module';
+import { FootersModule } from './footers/footers.module';
 @NgModule({
-  declarations: [AppComponent, TeamMemberComponent, FooterComponent],
+  declarations: [AppComponent, TeamMemberComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +27,7 @@ import { TestimonialModule } from './testimonial/testimonial.module';
     PostersModule,
     CountersModule,
     TestimonialModule,
+    FootersModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
