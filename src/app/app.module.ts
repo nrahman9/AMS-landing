@@ -16,6 +16,7 @@ import { EventsModule } from './events/events.module';
 import { FootersModule } from './footers/footers.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
