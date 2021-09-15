@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TeamMemberComponent } from './team-member/team-member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavbarModule } from './navbar/navbar.module';
@@ -17,7 +16,7 @@ import { EventsModule } from './events/events.module';
 import { FootersModule } from './footers/footers.module';
 import { SharedModule } from './shared/shared.module';
 @NgModule({
-  declarations: [AppComponent, TeamMemberComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
