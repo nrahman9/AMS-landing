@@ -14,6 +14,7 @@ import { PostersModule } from './posters/posters.module';
 import { CountersModule } from './counters/counters.module';
 import { TestimonialModule } from './testimonial/testimonial.module';
 import { FootersModule } from './footers/footers.module';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [AppComponent, TeamMemberComponent],
   imports: [
@@ -28,6 +29,7 @@ import { FootersModule } from './footers/footers.module';
     CountersModule,
     TestimonialModule,
     FootersModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
