@@ -2,22 +2,24 @@
 .height {
   min-height: 100vh;
 }
-.btn--white,
-.btn--hidden {
+a {
+  text-decoration: none;
+}
+
+.mat-stroked-button {
   text-transform: uppercase;
   color: #f7f7f7;
-  padding: 0.9rem 1.6rem;
-  border: 2px solid #273c75;
+  padding: 0.7rem 1.6rem;
+  border: 2px solid #091e58;
+  margin-left: 1.5rem;
+  border-radius: 0.5rem;
   display: inline-block;
   transition: all 0.3s linear;
   cursor: pointer;
-  margin-left: 1.5rem;
-  border-radius: 0.5rem;
 }
-.btn--white:hover,
-.btn--hidden:hover {
+.mat-stroked-button:hover {
   color: #fff;
-  background: #273c75;
+  background: #091e58;
 }
 .hero-banner {
   background-image: url(src/assets/poster-1.webp);

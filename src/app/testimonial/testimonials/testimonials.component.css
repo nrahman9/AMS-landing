@@ -1,7 +1,6 @@
 /* testimonial */
 .testimonials {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(src/assets/testimonial_background.webp) center/cover no-repeat fixed;
+  background: rgb(207, 204, 204);
 }
 .carousel {
   margin: 50px auto;
@@ -31,5 +30,5 @@
 }
 .carousel .overview b {
   text-transform: uppercase;
-  color: #b80924;
+  color: rgb(75, 65, 165);
 }
