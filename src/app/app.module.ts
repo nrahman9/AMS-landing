@@ -13,6 +13,7 @@ import { AboutModule } from './about/about.module';
 import { PostersModule } from './posters/posters.module';
 import { CountersModule } from './counters/counters.module';
 import { TestimonialModule } from './testimonial/testimonial.module';
+import { EventsModule } from './events/events.module';
 import { FootersModule } from './footers/footers.module';
 import { SharedModule } from './shared/shared.module';
 @NgModule({
@@ -30,6 +31,7 @@ import { SharedModule } from './shared/shared.module';
     TestimonialModule,
     FootersModule,
     SharedModule,
+    EventsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -8,5 +8,6 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [EventComponent],
   imports: [CommonModule, EventsRoutingModule, SharedModule],
+  exports: [EventComponent],
 })
 export class EventsModule {}
