@@ -1,5 +1,7 @@
 /* Nav Section */
-
+a {
+  text-decoration: none;
+}
 .navbar {
   background-color: #273c75;
   height: 45px;
@@ -19,17 +21,22 @@
   transition: 0.2s linear;
   top: -50px;
 }
-.text {
+.text a {
   font-size: 1rem;
   color: #fff;
 }
+.text a:hover {
+  color: rgb(238, 224, 224);
+}
+
 .mat-raised-button {
   color: #fff;
+  background: #2d4a99;
+}
+.mat-raised-button:hover {
   background: #273c75;
 }
-a {
-  text-decoration: none;
-}
+
 @media screen and (max-width: 768px) {
   .navbar {
     align-items: flex-start !important;
