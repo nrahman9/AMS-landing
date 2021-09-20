@@ -19,6 +19,8 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 
 import { TeamModule } from './team/team.module';
+import { HttpClientModule } from '@angular/common/http';
+import { AppService } from './app.service';
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
@@ -36,8 +38,9 @@ import { TeamModule } from './team/team.module';
     SharedModule,
     EventsModule,
     TeamModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

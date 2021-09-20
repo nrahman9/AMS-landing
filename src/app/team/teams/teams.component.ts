@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 export class TeamsComponent implements OnInit {
   items = [
     {
-      title: 'Card Title 1',
-      description: 'Department of CSE',
+      title: 'Sefat Anam',
+      description: 'Team Leader',
 
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg',
     },
     {
-      title: 'Card Title 2',
-      description: 'Department of CSE',
+      title: 'Naymur Rahman',
+      description: 'Team member',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg',
     },
   ];
