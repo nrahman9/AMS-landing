@@ -6,8 +6,8 @@
         <div class="event">
           <div class="event-left">
             <div class="event-date">
-              <div class="date">8</div>
-              <div class="month">Nov</div>
+              <div class="date">{{ event.startDate | date: "d" }}</div>
+              <div class="month">{{ event.startDate | date: "MMMM" }}</div>
             </div>
           </div>
 
@@ -17,7 +17,7 @@
             <div class="event-description">{{ event.description }}</div>
 
             <div class="event-timing">
-              <p>{{ event.startDate }}</p>
+              <p>{{ event.startDate | date: "shortTime" }}</p>
             </div>
           </div>
         </div>
