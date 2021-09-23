@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { TeamModule } from './team/team.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppService } from './app.service';
+import { CountersService } from './counters/counters.service';
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
@@ -40,7 +41,7 @@ import { AppService } from './app.service';
     TeamModule,
     HttpClientModule,
   ],
-  providers: [AppService],
+  providers: [AppService, CountersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

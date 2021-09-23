@@ -2,14 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Elements } from './element';
+import { Counters } from './counters';
+
 @Injectable({
   providedIn: 'root',
 })
-export class AppService {
+export class CountersService {
   constructor(private _http: HttpClient) {}
-
-  getEvents(): Observable<Elements[]> {
-    return this._http.get<Elements[]>(environment.eventApi);
+  getCounters(): Observable<Counters[]> {
+    return this._http.get<Counters[]>(environment.counterApi);
   }
 }

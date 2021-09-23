@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  eventApi: 'https://ams-back.herokuapp.com/api/v1/event',
+  counterApi: 'http://ams-back.herokuapp.com/api/v1/dashboard',
 };
 
 /*
