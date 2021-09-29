@@ -1,0 +1,6 @@
+<div id="myModal" class="modal" #dialog (click)="onDismissClick()">
+  <div class="modal-content" (click)="$event.stopImmediatePropagation()">
+    <span class="close" (click)="onDismissClick()">&times;</span>
+    <ng-content select="[content]"></ng-content>
+  </div>
+</div>

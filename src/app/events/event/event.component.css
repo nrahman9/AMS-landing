@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 0.7rem;
 }
 
 .event .event-right h3.event-title {
@@ -61,14 +61,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 320px;
+  width: 12rem;
 }
 .event .event-right .event-timing {
   background: rgb(231, 226, 226);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;
+  width: 7rem;
   padding: 8px;
   border-radius: 16px;
   margin: 24px 0;
@@ -78,4 +78,21 @@
 .event .event-right .event-timing p {
   text-align: center;
   margin: auto;
+}
+.event .event-right .event-group {
+  display: flex;
+  justify-content: space-between;
+}
+.event .event-right .event-group .mat-icon {
+  /* margin: 0 auto; */
+  margin-top: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .event-container .event {
+    flex-direction: column;
+    align-content: center;
+  }
+  .event .event-left {
+    border-radius: 8px 8px 0 0;
+  }
 }

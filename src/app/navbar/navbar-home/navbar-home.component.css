@@ -6,7 +6,9 @@ a {
   background-color: #273c75;
   height: 45px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-content: space-between;
+  padding: 4px 24px;
 }
 .fixed {
   position: fixed;
@@ -24,28 +26,31 @@ a {
 .text a {
   font-size: 1rem;
   color: #fff;
+  display: flex;
 }
 .text a:hover {
   color: rgb(238, 224, 224);
 }
 
 .mat-raised-button {
+  display: flex;
   color: #fff;
   background: #2d4a99;
 }
 .mat-raised-button:hover {
   background: #273c75;
+  color: rgb(238, 224, 224);
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
+  /* .navbar {
     align-items: flex-start !important;
     padding: 4px 24px !important;
     flex-direction: unset !important;
   }
   .text {
     font-size: 0.8rem;
-  }
+  } */
 }
 
 #logo {
