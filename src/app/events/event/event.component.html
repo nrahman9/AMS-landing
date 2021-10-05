@@ -19,23 +19,26 @@
               <div class="event-timing">
                 <p>{{ event.startDate | date: "shortTime" }}</p>
               </div>
-              <mat-icon (click)="isShown = true">visibility</mat-icon>
+              <mat-icon (click)="showEventDetail(event)">visibility</mat-icon>
             </div>
 
-            <app-dialog-box (dismiss)="isShown = false" *ngIf="isShown">
-              <div content>
-                <div class="event-right">
-                  <h3 class="event-title">{{ event.title }}</h3>
+            <app-dialog-box
+              *ngIf="event.title === selectedTitle"
+              (dismiss)="hideEventDetail()"
+            >
+              <ng-container content>
+                <h3 class="event-title">{{ event.title }}</h3>
 
-                  <div class="event-description">{{ event.description }}</div>
+                <div class="event-description">
+                  {{ event.description }}
+                </div>
 
-                  <div class="event-group">
-                    <div class="event-timing">
-                      <p>{{ event.startDate | date: "shortTime" }}</p>
-                    </div>
+                <div class="event-group">
+                  <div class="event-timing">
+                    <p>{{ event.startDate | date: "shortTime" }}</p>
                   </div>
                 </div>
-              </div>
+              </ng-container>
             </app-dialog-box>
             <!-- <div class="event-timing">
               <p>{{ event.startDate | date: "shortTime" }}</p>
@@ -46,3 +49,51 @@
     </div>
   </div>
 </div>
+
+<!-- 
+<div class="container">
+  <app-title>Event</app-title>
+  <div class="event-container">
+    <div class="row">
+      <div class="col-md-6 mx-auto" *ngFor="let event of events | async">
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">{{ event.startDate | date: "d" }}</div>
+              <div class="month">{{ event.startDate | date: "MMMM" }}</div>
+            </div>
+          </div>
+
+          <div class="event-right">
+            <h3 class="event-title">{{ event.title }}</h3>
+
+            <div class="event-description">{{ event.description }}</div>
+            <div class="event-group">
+              <div class="event-timing">
+                <p>{{ event.startDate | date: "shortTime" }}</p>
+              </div>
+              <mat-icon (click)="isShown = true">visibility</mat-icon>
+            </div>
+
+            <app-dialog-box *ngIf="isShown" (dismiss)="isShown = false">
+              <ng-container content>
+                <h3 class="event-title">{{ event.title }}</h3>
+
+                <div class="event-description">
+                  {{ event.description }}
+                </div>
+
+                <div class="event-group">
+                  <div class="event-timing">
+                    <p>{{ event.startDate | date: "shortTime" }}</p>
+                  </div>
+                </div>
+              </ng-container>
+            </app-dialog-box>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
