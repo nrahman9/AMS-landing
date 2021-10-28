@@ -49,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 0.7rem;
-  width: 400px;
+  width: 345px;
 }
 
 .event .event-right h3.event-title {
@@ -101,5 +101,13 @@
   }
   .event .event-left {
     border-radius: 8px 8px 0 0;
+  }
+  .event .event-right .event-group {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .event .event-right {
+    width: 305px;
   }
 }
