@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  eventApi: 'https://ams-back.herokuapp.com/api/v1/event',
-  counterApi: 'http://ams-back.herokuapp.com/api/v1/dashboard',
+  eventApi:
+    'https://ams-backend-stablev1.herokuapp.com/api/v1/Public/latestEvents',
+  counterApi: 'https://ams-backend-stablev1.herokuapp.com/api/v1/Dashboard',
 };
 
 /*
