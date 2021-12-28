@@ -1,0 +1,6 @@
+<div id="myModal" class="modal" #dialog (click)="onDismissClick()">
+  <div class="modal-content" (click)="$event.stopImmediatePropagation()">
+    <ng-content select="[content]"></ng-content>
+    <button mat-raised-button class="Ok" (click)="onDismissClick()">OK</button>
+  </div>
+</div>

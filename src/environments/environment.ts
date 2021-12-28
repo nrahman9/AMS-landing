@@ -7,6 +7,8 @@ export const environment = {
   eventApi:
     'https://ams-backend-stablev1.herokuapp.com/api/v1/Public/latestEvents',
   counterApi: 'https://ams-backend-stablev1.herokuapp.com/api/v1/Dashboard',
+  testimonialsAPI:
+    'https://ummahtrustedshop.com/api/Testimonials/GetTestimonialsByDepartment/1?fbclid=IwAR34Rk7JS9Ufdya9KH2E2s21RgOb1rJXUhO5hkm7-p63uZiDH86QnGCFQws',
 };
 
 /*

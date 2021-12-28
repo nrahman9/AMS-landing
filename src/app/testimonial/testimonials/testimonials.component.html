@@ -3,17 +3,20 @@
 
   <div class="testimonials">
     <ngb-carousel [showNavigationIndicators]="showNavigationIndicators">
-      <ng-template ngbSlide *ngFor="let item of items">
+      <ng-template ngbSlide *ngFor="let testimonials of testimonials | async">
         <div class="col-md-12 col-center m-auto">
           <div class="carousel">
             <div class="item text-center">
               <div class="img-box">
-                <img src="assets/testimonials-1.webp" alt="" />
+                <img [src]="testimonials.photo" alt="" />
               </div>
               <p class="testimonial">
-                {{ item.description }}
+                {{ testimonials.whatSay }}
               </p>
-              <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+              <p class="overview">
+                <b>{{ testimonials.name }}</b
+                >, {{ testimonials.designation }}
+              </p>
             </div>
           </div>
         </div>

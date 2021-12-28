@@ -22,6 +22,9 @@ import { TeamModule } from './team/team.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppService } from './app.service';
 import { CountersService } from './counters/counters.service';
+import { QueryModule } from './query/query.module';
+import { TestimonialsService } from './testimonial/testimonials/testimonials.service';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
@@ -40,8 +43,9 @@ import { CountersService } from './counters/counters.service';
     EventsModule,
     TeamModule,
     HttpClientModule,
+    QueryModule,
   ],
-  providers: [AppService, CountersService],
+  providers: [AppService, CountersService, TestimonialsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

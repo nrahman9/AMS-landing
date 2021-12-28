@@ -2,7 +2,10 @@
   <app-title>Event</app-title>
   <div class="event-container">
     <div class="row">
-      <div class="col-md-6 mx-auto" *ngFor="let event of events | async">
+      <div
+        class="content col-md-6 mx-auto"
+        *ngFor="let event of events | async"
+      >
         <div class="event">
           <div class="event-left">
             <div class="event-date">
